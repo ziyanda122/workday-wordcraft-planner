@@ -49,7 +49,7 @@ Only use deadlines the user provided; do not invent them.`,
 };
 
 export async function handleAssist(request: Request) {
-  const apiKey = process.env.LOVABLE_API_KEY;
+  const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) return new Response("AI is not configured.", { status: 500 });
   let body: { mode?: string; input?: string };
   try {
