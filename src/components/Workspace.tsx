@@ -78,7 +78,7 @@ export function ResultPanel({
         value={output}
         onChange={(e) => setOutput(e.target.value)}
         placeholder={loading ? "Working on it…" : placeholder}
-        className="min-h-[420px] resize-y bg-background font-mono text-sm leading-relaxed"
+        className="min-h-[420px] resize-y bg-background text-[15px] leading-relaxed"
       />
       <div className="mt-4 flex flex-wrap items-center gap-2">
         {loading ? (
